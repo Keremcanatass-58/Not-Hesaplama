@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s1=Number(prompt("1.Sınav notunu giriniz:"));
+        var s2=Number(prompt("2.Sınav notunu giriniz:"));
+        var s3=Number(prompt("3.Sınav notunu giriniz:"));
+        var ortalama=(s1+s2+s3)/3;
+        if(ortalama>=50)
+        {
+            alert(ortalama+"'bu ortalama ile geçtiniz!");
+        }
+        if(ortalama<50)
+        {
+            alert(ortalama+"'bu ortalama ile kaldınız!");
+            var s4=Number(prompt("Telafi notunuzu giriniz:"));
+            var ortalama2=(s1+s2+s3+s4)/4;
+            if(ortalama2<50)
+            {
+                alert(ortalama2+"'bu ortalama ile kaldınız!");
+            }
+            else
+            {
+                alert(ortalama2+"'bu ortalama ile geçtiniz!");
+            }
+        }
+    </script>
+</body>
+</html>
